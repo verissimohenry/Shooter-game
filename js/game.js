@@ -21,3 +21,4 @@ var config = {
     roundPixels: true
 
 };
+var game = new Phaser.Game(config);
