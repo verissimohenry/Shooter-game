@@ -4,7 +4,9 @@ class SceneMain extends Phaser.Scene {
             key: "SceneMain"
         });
     }
+    preload() {
 
+    }
     create() {
 
     }
