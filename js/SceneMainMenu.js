@@ -5,6 +5,10 @@ class SceneMainMenu extends Phaser.Scene {
         });
     }
 
+    preload() {
+        
+    }    
+
     create() {
         this.scene.start("SceneMain");
     }
