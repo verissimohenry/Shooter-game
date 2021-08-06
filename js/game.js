@@ -12,7 +12,11 @@ var config = {
             }
         }
     },
-    scene: [],
+    scene: [
+        SceneMainMenu,
+        SceneMain,
+        SceneGameOver
+    ],
     pixelArt: true,
     roundPixels: true
 
