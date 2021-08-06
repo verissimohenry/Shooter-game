@@ -5,6 +5,7 @@ class SceneMain extends Phaser.Scene {
         });
     }
     preload() {
+        this.load.image(imageKey, path);
 
     }
     create() {
