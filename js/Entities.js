@@ -27,6 +27,11 @@ class Entity extends Phaser.GameObjects.Sprite {
         this.scene.physics.world.enableBody(this, 0);
         this.setData("type", type);
         this.setData("isDead", false);
+        this.states = {
+            MOVE_DOWN: "MOVE_DOWN",
+            CHASE: "CHASE"
+          };
+          this.state = this.states.MOVE_DOWN;
 
         class ChaserShip extends Entity {
             constructor(scene, x, y) {
