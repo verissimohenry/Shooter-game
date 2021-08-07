@@ -27,5 +27,30 @@ class Entity extends Phaser.GameObjects.Sprite {
         this.scene.physics.world.enableBody(this, 0);
         this.setData("type", type);
         this.setData("isDead", false);
+
+        class ChaserShip extends Entity {
+            constructor(scene, x, y) {
+                super(scene, x, y, "sprEnemy1", "ChaserShip");
+                this.body.velocity.y = Phaser.Math.Between(50, 100);
+            }
+        }
+
+        class GunShip extends Entity {
+            constructor(scene, x, y) {
+                super(scene, x, y, "sprEnemy0", "GunShip");
+                this.body.velocity.y = Phaser.Math.Between(50, 100);
+                this.play("sprEnemy0");
+            }
+        }
+
+        class CarrierShip extends Entity {
+            constructor(scene, x, y) {
+                super(scene, x, y, "sprEnemy2", "CarrierShip");
+                this.body.velocity.y = Phaser.Math.Between(50, 100);
+                this.play("sprEnemy2");
+            }
+        }
     }
+
+
 }
