@@ -116,4 +116,15 @@ class SceneMain extends Phaser.Scene {
             this.player.moveRight();
         }
     }
+
+    getEnemiesByType(type) {
+        var arr = [];
+        for (var i = 0; i < this.enemies.getChildren().length; i++) {
+            var enemy = this.enemies.getChildren()[i];
+            if (enemy.getData("type") == type) {
+                arr.push(enemy);
+            }
+        }
+        return arr;
+    }
 }
