@@ -32,6 +32,9 @@ class Entity extends Phaser.GameObjects.Sprite {
             CHASE: "CHASE"
         };
         this.state = this.states.MOVE_DOWN;
+        this.scene = scene;
+        this.key = key;
+        this.velocityY = velocityY;
     }
 }
 class ChaserShip extends Entity {
@@ -159,7 +162,7 @@ explode = () => {
 
 class ScrollingBackground {
     constructor(scene, key, velocityY) {
-      
+
     }
-  }
+}
 
