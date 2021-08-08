@@ -201,6 +201,23 @@ class SceneMain extends Phaser.Scene {
 
         this.physics.add.collider(this.playerLasers, this.enemies, function (_playerLaser, _enemy) {
 
+            if (enemy) {
+                if (enemy.onDestroy !== undefined) {
+                    enemy.onDestroy();
+                }
+
+                enemy.explode(true);
+                playerLaser.destroy();
+            }
+
+            this.physics.add.overlap(this.player, this.enemies, function (player, enemy) {
+                if (!player.getData("isDead") &&
+                    !enemy.getData("isDead")) {
+                    player.explode(false);
+                    enemy.explode(true);
+                }
+            });
+
         });
 
         for (var i = 0; i < this.playerLasers.getChildren().length; i++) {
