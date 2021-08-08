@@ -218,6 +218,14 @@ class SceneMain extends Phaser.Scene {
                 }
             });
 
+            this.physics.add.overlap(this.player, this.enemyLasers, function (player, laser) {
+                if (!player.getData("isDead") &&
+                    !laser.getData("isDead")) {
+                    player.explode(false);
+                    laser.destroy();
+                }
+            });
+
         });
 
         for (var i = 0; i < this.playerLasers.getChildren().length; i++) {
