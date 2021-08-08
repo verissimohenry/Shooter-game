@@ -5,7 +5,7 @@ class SceneMainMenu extends Phaser.Scene {
         });
     }
 
-    preload() {
+    preload = () => {
         this.load.image("sprBtnPlay", "content/sprBtnPlay.png");
         this.load.image("sprBtnPlayHover", "content/sprBtnPlayHover.png");
         this.load.image("sprBtnPlayDown", "content/sprBtnPlayDown.png");
@@ -17,7 +17,7 @@ class SceneMainMenu extends Phaser.Scene {
         this.load.audio("sndBtnDown", "content/sndBtnDown.wav");
     }
 
-    create() {
+    create = () => {
         this.scene.start("SceneMain");
     }
 }

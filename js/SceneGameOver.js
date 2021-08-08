@@ -5,7 +5,7 @@ class SceneGameOver extends Phaser.Scene {
         });
     }
 
-    create() {
+    create = () => {
 
     }
 }
