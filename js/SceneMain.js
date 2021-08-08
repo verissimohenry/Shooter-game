@@ -84,6 +84,9 @@ class SceneMain extends Phaser.Scene {
         this.enemies = this.add.group();
         this.enemyLasers = this.add.group();
         this.playerLasers = this.add.group();
+        this.setData("isShooting", false);
+        this.setData("timerShootDelay", 10);
+        this.setData("timerShootTick", this.getData("timerShootDelay") - 1);
         this.time.addEvent({
             delay: 1000,
             callback: function () {
