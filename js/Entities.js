@@ -39,11 +39,11 @@ class Entity extends Phaser.GameObjects.Sprite {
                 this.body.velocity.y = Phaser.Math.Between(50, 100);
                 if (!this.getData("isDead") && this.scene.player) {
                     if (Phaser.Math.Distance.Between(
-                            this.x,
-                            this.y,
-                            this.scene.player.x,
-                            this.scene.player.y
-                        ) < 320) {
+                        this.x,
+                        this.y,
+                        this.scene.player.x,
+                        this.scene.player.y
+                    ) < 320) {
 
                         this.state = this.states.CHASE;
                     }
@@ -105,6 +105,13 @@ class Entity extends Phaser.GameObjects.Sprite {
                 super(scene, x, y, "sprEnemy2", "CarrierShip");
                 this.body.velocity.y = Phaser.Math.Between(50, 100);
                 this.play("sprEnemy2");
+            }
+        }
+
+        class PlayerLaser extends Entity {
+            constructor(scene, x, y) {
+                super(scene, x, y, "sprLaserPlayer");
+                this.body.velocity.y = -200;
             }
         }
 
