@@ -67,4 +67,10 @@ class SceneGameOver extends Phaser.Scene {
       this.backgrounds.push(bg);
     }
   };
+
+  update = () => {
+    for (var i = 0; i < this.backgrounds.length; i++) {
+      this.backgrounds[i].update();
+    }
+  };
 }

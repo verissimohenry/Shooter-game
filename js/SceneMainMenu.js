@@ -96,7 +96,7 @@ class SceneMainMenu extends Phaser.Scene {
     }
   };
 
-  create = () => {
+  update = () => {
     for (var i = 0; i < this.backgrounds.length; i++) {
       this.backgrounds[i].update();
     }
