@@ -230,6 +230,12 @@ class SceneMain extends Phaser.Scene {
                 }
             });
 
+            this.backgrounds = [];
+            for (var i = 0; i < 5; i++) { // create five scrolling backgrounds
+                var bg = new ScrollingBackground(this, "sprBg0", i * 10);
+                this.backgrounds.push(bg);
+            }
+
         });
 
         for (var i = 0; i < this.playerLasers.getChildren().length; i++) {
@@ -257,4 +263,5 @@ class SceneMain extends Phaser.Scene {
         }
         return arr;
     }
+
 }
