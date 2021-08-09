@@ -51,6 +51,14 @@ class SceneMainMenu extends Phaser.Scene {
       this
     );
 
+    this.btnPlay.on(
+      "pointerup",
+      function () {
+        this.setTexture("sprBtnPlay");
+      },
+      this
+    );
+
     this.btnPlay.setInteractive();
   };
 }
