@@ -6,6 +6,8 @@ class SceneMainMenu extends Phaser.Scene {
   }
 
   preload = () => {
+    this.load.image("sprBg0", "content/sprBg0.png");
+    this.load.image("sprBg1", "content/sprBg1.png");
     this.load.image("sprBtnPlay", "content/sprBtnPlay.png");
     this.load.image("sprBtnPlayHover", "content/sprBtnPlayHover.png");
     this.load.image("sprBtnPlayDown", "content/sprBtnPlayDown.png");
@@ -91,6 +93,12 @@ class SceneMainMenu extends Phaser.Scene {
       var key = keys[Phaser.Math.Between(0, keys.length - 1)];
       var bg = new ScrollingBackground(this, key, i * 10);
       this.backgrounds.push(bg);
+    }
+  };
+
+  create = () => {
+    for (var i = 0; i < this.backgrounds.length; i++) {
+      this.backgrounds[i].update();
     }
   };
 }
