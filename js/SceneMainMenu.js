@@ -29,6 +29,28 @@ class SceneMainMenu extends Phaser.Scene {
       "sprBtnPlay"
     );
 
+    this.btnPlay.on(
+      "pointerover",
+      function () {
+        this.btnPlay.setTexture("sprBtnPlayHover"); // set the button texture to sprBtnPlayHover
+        this.sfx.btnOver.play(); // play the button over sound
+      },
+      this
+    );
+
+    this.btnPlay.on("pointerout", function () {
+      this.setTexture("sprBtnPlay");
+    });
+
+    this.btnPlay.on(
+      "pointerdown",
+      function () {
+        this.btnPlay.setTexture("sprBtnPlayDown");
+        this.sfx.btnDown.play();
+      },
+      this
+    );
+
     this.btnPlay.setInteractive();
   };
 }
