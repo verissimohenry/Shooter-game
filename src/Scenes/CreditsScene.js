@@ -8,7 +8,7 @@ export default class CreditsScene extends Phaser.Scene {
 
   create() {
     this.creditsText = this.add.text(0, 0, 'Credits', { fontSize: '32px', fill: '#fff' });
-    this.madeByText = this.add.text(0, 0, 'Created By: Necmi GUNDUZ', { fontSize: '26px', fill: '#fff' });
+    this.madeByText = this.add.text(0, 0, 'Created By: Henry Verissimo', { fontSize: '26px', fill: '#fff' });
     this.mcText = this.add.text(0, 0, 'Thanks to Microverse', { fontSize: '26px', fill: '#fff' });
 
     this.zone = this.add.zone(config.width / 2, config.height / 2, config.width, config.height);
@@ -38,6 +38,7 @@ export default class CreditsScene extends Phaser.Scene {
       ease: 'Power1',
       duration: 3000,
       delay: 1000,
+      // eslint-disable-next-line func-names
       onComplete: function () {
         return this.creditsTween.destroy;
       }.bind(this),
@@ -49,6 +50,7 @@ export default class CreditsScene extends Phaser.Scene {
       ease: 'Power1',
       duration: 5000,
       delay: 1000,
+      // eslint-disable-next-line func-names
       onComplete: function () {
         return this.madeByTween.destroy;
       }.bind(this),
@@ -60,6 +62,7 @@ export default class CreditsScene extends Phaser.Scene {
       ease: 'Power1',
       duration: 6000,
       delay: 1000,
+      // eslint-disable-next-line func-names
       onComplete: function () {
         return this.madeByTween.destroy;
       }.bind(this),

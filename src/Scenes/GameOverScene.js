@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 import Phaser from 'phaser';
 import { postData } from '../apiData';
 import { getUser } from '../User/user';
