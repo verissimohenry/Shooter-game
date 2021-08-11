@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import Phaser from 'phaser';
 import button02 from '../assets/ui/blue_button02.png';
 import button03 from '../assets/ui/blue_button03.png';
@@ -6,9 +5,9 @@ import logo from '../assets/logo.png';
 import box from '../assets/ui/grey_box.png';
 import checkedBox from '../assets/ui/blue_boxCheckmark.png';
 import bgMusic from '../assets/bg-music.mp3';
-import explosionSound from '../assets_explosion.mp3';
-import sndBtnOver from '../assets_sndBtnOver.wav';
-import sndBtnDown from '../assets_sndBtnDown.wav';
+import explosionSound from '../assets/src_assets_explosion.mp3';
+import sndBtnOver from '../assets/src_assets_sndBtnOver.wav';
+import sndBtnDown from '../assets/src_assets_sndBtnDown.wav';
 import bgSpace from '../assets/bg_space.png';
 import sprBg0 from '../assets/sprBg0.png';
 import ship from '../assets/ship.png';
