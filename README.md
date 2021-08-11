@@ -14,7 +14,7 @@ Implementation of a Space Shooter Game built with the [Phaser 3](https://phaser.
 
 The main goal of this project is to build a platform game. Phaser and Javascript are the main technologies used to develop this project.
 
-Live version of the project: [Live version](relaxed-wing-8131f6.netlify.app)
+Live version of the project: [Live version](https://hungry-hopper-15f02b.netlify.app/)
 
 Project Link: [Javascript-Capstone](https://github.com/verissimohenry/Shooter-game.git)
 
