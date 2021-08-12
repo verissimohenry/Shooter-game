@@ -67,5 +67,32 @@ export default class CreditsScene extends Phaser.Scene {
         return this.madeByTween.destroy;
       }.bind(this),
     });
+
+    this.btnback = this.add.sprite(
+      this.game.config.width * 0.5,
+      this.game.config.height * 0.6,
+      'sprBtnBack',
+    );
+
+    this.btnback.setInteractive();
+
+    this.btnback.on('pointerover', function () {
+      this.btnback.setTexture('sprBtnBackHover'); // set the button texture to sprBtnPlayHover
+    // this.sfx.sndBtnOver.play(); // play the button over sound
+    }, this);
+
+    this.btnback.on('pointerout', function () {
+      this.setTexture('sprBtnBack');
+    });
+
+    this.btnback.on('pointerdown', function () {
+      this.btnback.setTexture('sprBtnBackDown');
+    // this.sfx.sndBtnDown.play();
+    }, this);
+
+    this.btnback.on('pointerup', function () {
+      this.btnback.setTexture('sprBtnBack');
+      this.scene.start('Title');
+    }, this);
   }
 }
