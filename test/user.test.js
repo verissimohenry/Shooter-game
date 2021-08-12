@@ -12,20 +12,20 @@ describe('Tests for getting default user name', () => {
 
 describe('Tests for setting a new user name', () => {
   test('Should return that the user name was succesfully stored', () => {
-    expect(setUser('Henry')).toBe('User set to: Toyin');
+    expect(setUser('Henry')).toBe('User set to: Henry');
   });
 
   test('Should return that the user name was succesfully stored', () => {
-    expect(setUser('Henry')).not.toBe('User set to: Tobi');
+    expect(setUser('Henry')).not.toBe('User set to: Toyin');
   });
 });
 
 describe('Tests for getting new users name', () => {
   test('Should return Henry', () => {
-    expect(getUser()).toBe('Toyin');
+    expect(getUser()).toBe('Henry');
   });
 
   test('Should not return Henry', () => {
-    expect(getUser()).not.toBe('Tobi');
+    expect(getUser()).not.toBe('Toyin');
   });
 });
