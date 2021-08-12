@@ -26,14 +26,15 @@ This is a never-ending game. User faces different alien ships at random times. U
 
 The game uses one laser sprite, one user ship, four enemy ships, and two backgrounds. Two backgrounds are displayed on each other to create a more interesting background and higher contrast. The user ship is black and white to have a high contrast with the background. The enemy ships have fantastic desings, and they are relatively more colored to create a confusion with the dark background with low contrast. There is a background music, and an explosion sound in the game.
 
-# Background Images
-- First Background:
+# Screenshort
 
-![Screenshot](src/assets/bg_space.png)
+![Screenshot](src/assets/images.png)
 
-- Second Background:
+![Screenshot](src/assets/images1.png)
 
-![Screenshot](src/assets/sprBg0.png)
+![Screenshot](src/assets/images3.png)
+
+![Screenshot](src/assets/images4.png)
 
 # User Ship
 
