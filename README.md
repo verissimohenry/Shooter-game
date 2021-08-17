@@ -20,7 +20,7 @@ Project Link: [Javascript-Capstone](https://github.com/verissimohenry/Shooter-ga
 
 ## The game
 
-This is a never-ending game. User faces different alien ships at random times. User uses laser (Space) to shoot and explode enemy ships. Every different enemy ship shot adds a differnet point to the user's score. When the user's ship is shot by an enemy laser, or an enemy ship touches the user's ship, the game ends. The user can restart the game. Also, users' high scores are stored in an API, and users can display the highest ten scores in the scoreboard scene.
+This is a never-ending game. User faces different alien ships at random times. User uses laser (Space) to shoot and explode enemy ships. Every different enemy ship shot adds a different point to the user's score. When the user's ship is shot by an enemy laser, or an enemy ship touches the user's ship, the game ends. The user can restart the game. Also, users' high scores are stored in an API, and users can display the highest ten scores in the scoreboard scene.
 
 ### Game design
 
